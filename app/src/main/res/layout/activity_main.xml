@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cecyt9.ipn.edu.webserviceconsumo.MainActivity">
+
+    <TextView
+        android:id="@+id/txt"
+        android:layout_width="320dp"
+        android:layout_height="21dp"
+        android:text="Registrate antes de ingresar"
+        tools:layout_editor_absoluteX="36dp"
+        tools:layout_editor_absoluteY="32dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp" />
+
+    <EditText
+        android:id="@+id/usuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Usuario"
+        android:inputType="text"
+        tools:layout_editor_absoluteX="82dp"
+        tools:layout_editor_absoluteY="107dp"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/txt"
+        android:layout_alignLeft="@+id/txt"
+        android:layout_alignStart="@+id/txt" />
+
+    <TextView
+        android:id="@+id/olvidaste"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¿Olvidaste tu usuario o contraseña?"
+        tools:layout_editor_absoluteX="85dp"
+        tools:layout_editor_absoluteY="257dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/button2"
+        android:layout_alignStart="@+id/button2"
+        android:layout_marginBottom="26dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ingresar"
+        tools:layout_editor_absoluteX="147dp"
+        tools:layout_editor_absoluteY="299dp"
+        android:onClick="ingresar"
+        android:layout_below="@+id/contra"
+        android:layout_alignLeft="@+id/contra"
+        android:layout_alignStart="@+id/contra"
+        android:layout_marginTop="66dp" />
+
+    <EditText
+        android:id="@+id/contra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Contraseña"
+        android:inputType="textPassword"
+        tools:layout_editor_absoluteX="82dp"
+        tools:layout_editor_absoluteY="189dp"
+        android:layout_marginTop="42dp"
+        android:layout_below="@+id/usuario"
+        android:layout_alignLeft="@+id/usuario"
+        android:layout_alignStart="@+id/usuario" />
+
+</RelativeLayout>
